@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #b{
+        height: 400px;
+        width: px;
+     }
+     .on{
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        background: -webkit-radial-gradient(yellow,lightgray);
+     }
+     .off{
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        background: -webkit-radial-gradient(red,lightgray);
+     }
+    </style>
+</head>
+<body>
+    <button class="on" onclick="turnon()" >on</button>
+    <img id="b"src="https://raw.github.com/Nithishkrishna124/robot/main/off.jpg" alt="https://raw.github.com/Nithishkrishna124/robot/main/on.jpg">
+    <button class="off" onclick="turnoff()">off</button>
+     <script>
+     function turnon(){
+         document.getElementById("b").src="https://raw.github.com/Nithishkrishna124/robot/main/on.jpg"
+     }
+     function turnoff(){
+        document.getElementById("b").src="https://raw.github.com/Nithishkrishna124/robot/main/off.jpg"
+     }
+    </script>
+</body>
+</html>
+
